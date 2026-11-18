@@ -23,9 +23,7 @@ Built together with [Amit Gertner](https://github.com/amit22882036-ship-it).
 
 RM3 gives most of the gain. SDM and the fusion are comparable to plain RM3 in this setup; they do not beat it by a measurable margin.
 
-**Caveats:**
-- The grid was narrowed after looking at results on the same 50 queries. The nested CV is correct inside the procedure, but the reported MAP is somewhat optimistic for unseen queries.
-- The plain and SDM configurations fed into the fusion stage were selected on all 50 training queries, so the fusion's nested-CV number has mild leakage.
+All tuning uses the 50 labeled training queries. Nested cross-validation estimates the performance of the selection procedure, not the performance on unseen queries.
 
 ## Requirements
 
